@@ -1,5 +1,6 @@
 import Category from "./category";
 import Crowdfunding from "./crowdfunding";
+import CTA from "./cta";
 import Discover from "./discover";
 import Funding from "./funding";
 import Hero from "./hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <Crowdfunding />
       <Category />
       <Testimonial />
+      <CTA />
     </>
   );
 }
