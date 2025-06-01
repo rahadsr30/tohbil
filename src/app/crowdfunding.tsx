@@ -88,7 +88,7 @@ export default function Crowdfunding() {
             Start a Campaign
           </Button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {features.map((feature, idx) => (
             <div key={idx} className="flex flex-col items-start text-start">
               <Image
@@ -98,7 +98,7 @@ export default function Crowdfunding() {
                 height={80}
                 className="mb-4 md:mb-8"
               />
-              <h3 className="lg-card text-[#3B3B3E] mb-6 tracking-wide">
+              <h3 className="lg-card-2 text-[#3B3B3E] mb-6 tracking-wide">
                 {feature.title}
               </h3>
               <ul className="text-[#434347] lg-text-medium space-y-2">

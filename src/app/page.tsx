@@ -1,3 +1,4 @@
+import Category from "./category";
 import Crowdfunding from "./crowdfunding";
 import Discover from "./discover";
 import Funding from "./funding";
@@ -10,6 +11,7 @@ export default function Home() {
       <Funding />
       <Discover />
       <Crowdfunding />
+      <Category />
     </>
   );
 }
