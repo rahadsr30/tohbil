@@ -110,8 +110,17 @@
 }
 
 @layer components {
+  .hero {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-[80px] leading-10 lg:leading-[92px] font-semibold;
+  }
   .text-normal {
     @apply text-sm md:text-base font-medium;
+  }
+  .lg-text {
+    @apply text-base md:text-xl font-normal;
+  }
+  .lg-text-medium {
+    @apply text-base md:text-xl font-medium;
   }
 
   .wrapper {
