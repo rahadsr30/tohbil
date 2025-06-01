@@ -1,3 +1,4 @@
+import Discover from "./discover";
 import Funding from "./funding";
 import Hero from "./hero";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <Funding />
+      <Discover />
     </>
   );
 }
