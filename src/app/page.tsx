@@ -3,6 +3,7 @@ import Crowdfunding from "./crowdfunding";
 import Discover from "./discover";
 import Funding from "./funding";
 import Hero from "./hero";
+import Testimonial from "./testimonial";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Discover />
       <Crowdfunding />
       <Category />
+      <Testimonial />
     </>
   );
 }
