@@ -16,7 +16,7 @@ const buttonVariants = cva(
         outline:
           "border border-[#199F38] text-[#177E30] rounded-full text-base cursor-pointer bg-background  hover:bg-green-50",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+          "bg-white hover:bg-amber-50 rounded-full text-base cursor-pointer text-[#199F38]",
         ghost: "text-base text-green-700 hover:text-green-600 cursor-pointer",
         link: "text-primary underline-offset-4 hover:underline",
       },

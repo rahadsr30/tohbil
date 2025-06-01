@@ -1,9 +1,11 @@
+import Funding from "./funding";
 import Hero from "./hero";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Funding />
     </>
   );
 }
