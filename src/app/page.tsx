@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Funding />
-      <Discover />
-      <Crowdfunding />
       <Category />
+      <Discover />
+      <Funding />
+      <Crowdfunding />
       <Testimonial />
       <CTA />
     </>

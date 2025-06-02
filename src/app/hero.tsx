@@ -48,14 +48,36 @@ export default function Hero() {
             Empower Your Dreams with Tohbil
           </h1>
           <p className="lg-text text-[#434347] mb-7 md:mb-10">
-            Tohbil is Bangladesh’s homegrown crowdfunding platform—where dreams
-            turn into reality through community-driven support. Launch donation
-            drives, pre-sale projects, or one-time investment campaigns—all in
-            one place.
+            Tohbil is Bangladesh&apos;s homegrown crowdfunding platform—where
+            dreams turn into reality through community-driven support. Launch
+            donation drives, pre-sale projects, or one-time investment
+            campaigns—all in one place.
           </p>
+          <div className="relative flex items-center mb-4">
+            <input
+              type="text"
+              placeholder="Search by Categories, Tags, Project names etc"
+              className="w-full pl-10 pr-4 py-2 rounded-full border border-green-600 focus:outline-none focus:ring-1 focus:ring-green-500"
+            />
+            <svg
+              className="absolute left-3 w-5 h-5 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </div>
           <div className="flex gap-4 mb-10">
-            <Button variant="default">Start a Campaign</Button>
+            <Button variant="default">Join Now</Button>
             <Button variant="outline">Explore Campaigns</Button>
+            <Button variant="outline">Explore Idea&apos;s</Button>
           </div>
           {/* Partners */}
           <div className="mt-10 md:mt-32">

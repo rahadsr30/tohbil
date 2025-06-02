@@ -14,7 +14,7 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
-          "border border-[#199F38] text-[#177E30] rounded-full text-base cursor-pointer bg-background  hover:bg-green-50",
+          "border border-[#199F38] text-[#177E30] rounded-full text-base cursor-pointer hover:bg-green-50",
         secondary:
           "bg-white hover:bg-amber-50 rounded-full text-base cursor-pointer text-[#199F38]",
         ghost: "text-base text-green-700 hover:text-green-600 cursor-pointer",

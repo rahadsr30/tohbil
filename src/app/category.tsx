@@ -95,7 +95,7 @@ export default function Category() {
   };
 
   return (
-    <section className="py-section text-center">
+    <section className="py-section text-center bg-[#F5F5F6]">
       <div className="wrapper">
         <h2 className="heading mb-10 md:mb-16 text-[#3B3B3E]">
           Explore by Category

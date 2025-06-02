@@ -9,9 +9,7 @@ export default function Funding() {
       <div className="wrapper">
         <div className="flex w-full justify-between items-end mb-10 md:mb-16">
           <h2 className="heading text-white mb-2 md:mb-0 ">
-            Simple Steps to
-            <br />
-            Crowdfunding Success
+            Fundraising on Tohbil is <br /> Simple, Effective, and Reliable
           </h2>
           <Button variant="secondary" className="hidden md:inline-block">
             Start a Campaign

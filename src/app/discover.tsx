@@ -67,11 +67,8 @@ const projects = [
 
 export default function Discover() {
   return (
-    <section className="w-full bg-white py-section">
+    <section className="w-full bg-[#F5F5F6] py-10 md:py-16 border-t border-[#ADAEB3]">
       <div className="wrapper">
-        <h2 className="text-center heading text-[#3B3B3E] md:mb-16 mb-10">
-          Discover Inspiring Projects
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => {
             const percent = Math.min(
