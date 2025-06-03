@@ -9,16 +9,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "/how-it-works", label: "How It Works" },
+    { href: "/about", label: "About" },
     { href: "/campaigns", label: "Campaigns", hasDropdown: true },
-    { href: "/why-tohbil", label: "Why Tohbil?" },
+    // { href: "/why-tohbil", label: "Why Tohbil?" },
     { href: "/academy", label: "Academy" },
-    { href: "/subscription", label: "Subscription Management" },
+    // { href: "/subscription", label: "Subscription Management" },
   ];
 
   return (
     <nav className="bg-white border-b border-neutral-200 sticky top-0 z-50">
-      <div className="max-w-[1080px] mx-auto px-4">
+      <div className="wrapper">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
