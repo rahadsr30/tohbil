@@ -47,6 +47,24 @@ const tutorials = [
     title: "Sharing Your Campaign Effectively",
     stats: "11K Views | 1 Month Ago",
   },
+  {
+    image: tutorial1Image,
+    alt: "Tutorial 1",
+    title: "How to Set Up Your Campaign Page",
+    stats: "15K Views | 1 Month Ago",
+  },
+  {
+    image: tutorial2Image,
+    alt: "Tutorial 2",
+    title: "Best Practices for Writing Campaign Descriptions",
+    stats: "9K Views | 1 Month Ago",
+  },
+  {
+    image: tutorial3Image,
+    alt: "Tutorial 3",
+    title: "Sharing Your Campaign Effectively",
+    stats: "11K Views | 1 Month Ago",
+  },
 ];
 
 const campaignTips = [

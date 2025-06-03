@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <section className="py-section  relative">
       <div className="wrapper">
-        <div className="flex flex-col items-center text-center rounded-xl z-10 relative overflow-hidden bg-[url('/cta.png')] bg-cover bg-center h-full text-white py-16 md:py-28 lg:py-40">
+        <div className="flex flex-col items-center text-center rounded-xl z-10 relative overflow-hidden bg-[url('/cta.png')] bg-cover bg-center h-full text-white px-10 lg:px-0 py-16 md:py-28 lg:py-40">
           <h2 className="text-[#101011] heading mb-3">
             Ready to Make a Difference?
           </h2>

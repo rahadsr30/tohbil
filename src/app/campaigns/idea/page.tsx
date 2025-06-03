@@ -1,149 +1,156 @@
 "use client";
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
-import CampaignHeroImage from "@/assets/campaign/CampaignHero.png";
+import CampaignHeroImage from "@/assets/campaign/idea.png";
 import { Button } from "@/components/ui";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import discover1 from "@/assets/discover/discover1.png";
-import discover2 from "@/assets/discover/discover2.png";
-import discover3 from "@/assets/discover/discover3.png";
-import discover4 from "@/assets/discover/discover4.png";
-import discover5 from "@/assets/discover/discover5.png";
-import discover6 from "@/assets/discover/discover6.png";
-import CTA from "../cta";
+import idea1 from "@/assets/campaign/idea1.png";
+import idea2 from "@/assets/campaign/idea2.png";
+import idea3 from "@/assets/campaign/idea3.png";
+import idea4 from "@/assets/campaign/idea4.png";
+import idea5 from "@/assets/campaign/idea5.png";
+import idea6 from "@/assets/campaign/idea6.png";
+import idea7 from "@/assets/campaign/idea7.png";
+import idea9 from "@/assets/campaign/idea9.png";
+import idea10 from "@/assets/campaign/idea10.png";
+import idea11 from "@/assets/campaign/idea11.png";
+import idea12 from "@/assets/campaign/idea12.png";
+import idea13 from "@/assets/campaign/idea13.png";
 
-// Placeholder data for campaigns
+import CTA from "../../cta";
+
+// Placeholder data for idea campaigns
 const campaigns = [
   {
-    image: discover1,
-    tag: "Project Quantip",
-    title: "Eco-Friendly Water Bottles",
-    desc: "Support our mission to reduce plastic waste with our reusable, eco-friendly water bottles.",
-    daysLeft: 10,
-    raised: 35000,
-    goal: 50000,
-    category: "eco-friendly",
+    image: idea1,
+    tag: "Project LightHope BD",
+    title: "Smart Solar Lantern for Rural Homes",
+    desc: "Light up off-grid villages with low-cost, solar-powered lanterns designed by local engineers.",
+    daysLeft: 18,
+    raised: 72000,
+    goal: 150000,
+    category: "technology",
     sharedCount: 120,
   },
   {
-    image: discover2,
-    tag: "Project Sanifood",
-    title: "Affordable Laptops for Students",
-    desc: "Help bridge the digital divide by contributing to our initiative for providing laptops to underprivileged students.",
-    daysLeft: 15,
-    raised: 50000,
-    goal: 100000,
-    category: "education",
+    image: idea2,
+    tag: "Project Vision4All",
+    title: "Mobile Eye Care Van",
+    desc: "Deploy a mobile van equipped with eye checkup facilities to serve remote regions.",
+    daysLeft: 29,
+    raised: 150000,
+    goal: 400000,
+    category: "technology",
     sharedCount: 250,
   },
   {
-    image: discover3,
-    tag: "Project CleanCity",
-    title: "Urban Clean-Up Campaign",
-    desc: "Join us in making our cities cleaner and greener through community-led clean-up events.",
-    daysLeft: 5,
-    raised: 20000,
-    goal: 75000,
-    category: "social-causes",
+    image: idea3,
+    tag: "Project Code4Bangladesh",
+    title: "Rural Coding Academy",
+    desc: "Build a tech lab in a small-town school to teach coding and robotics to teenagers.",
+    daysLeft: 22,
+    raised: 110000,
+    goal: 300000,
+    category: "eco-friendly",
     sharedCount: 80,
   },
   {
-    image: discover4,
-    tag: "Project Health",
-    title: "Art for All",
-    desc: "Help us bring art education to underprivileged children in rural areas.",
-    daysLeft: 12,
-    raised: 75000,
-    goal: 100000,
-    category: "arts-and-culture",
+    image: idea4,
+    tag: "Project LinguaLab",
+    title: "Local Language Learning App",
+    desc: "Create an app to help children learn English, Bangla, and indigenous languages interactively.",
+    daysLeft: 35,
+    raised: 210000,
+    goal: 500000,
+    category: "health",
     sharedCount: 180,
   },
   {
-    image: discover5,
-    tag: "Project Techlin",
-    title: "Tech Startup Accelerator",
-    desc: "Invest in the future of technology with our startup accelerator program.",
-    daysLeft: 2,
-    raised: 150000,
+    image: idea5,
+    tag: "Project GreenBuild BD",
+    title: "Eco-Friendly Brick Project",
+    desc: "Support a startup making durable, eco-friendly bricks to reduce pollution from traditional kilns.",
+    daysLeft: 10,
+    raised: 95000,
     goal: 200000,
-    category: "innovative-startups",
+    category: "technology",
     sharedCount: 300,
   },
   {
-    image: discover6,
-    tag: "Project Bright10",
-    title: "Fund Education for 10 Rohingya Children",
-    desc: "Your contribution can help provide books, uniforms, and access to learning for displaced children.",
+    image: idea6,
+    tag: "Project UrbanEase",
+    title: "Street Vendor Smart Trolley",
+    desc: "A lightweight, modular cart design for street vendors that includes solar charging and storage.",
     daysLeft: 9,
+    raised: 60000,
+    goal: 90000,
+    category: "education",
+    sharedCount: 220,
+  },
+  {
+    image: idea7,
+    tag: "Project SafeSip Tech",
+    title: "Portable Water Filter Bottle",
+    desc: "Launch a lightweight bottle that filters river or pond water for safe drinking — ideal for remote areas.",
+    daysLeft: 15,
+    raised: 75000,
+    goal: 180000,
+    category: "education",
+    sharedCount: 220,
+  },
+  {
+    image: idea9,
+    tag: "Project EduVerse AI",
+    title: "AI Career Guidance Bot for Students",
+    desc: "Fund a career assistant chatbot to guide SSC/HSC students based on their skills and interest.",
+    daysLeft: 21,
+    raised: 130000,
+    goal: 250000,
+    category: "education",
+    sharedCount: 220,
+  },
+  {
+    image: idea10,
+    tag: "Project AgroFly BD",
+    title: "Organic Farming Drone Sprayer",
+    desc: "Support the prototyping of a drone sprayer that helps organic farmers reduce manual labor.",
+    daysLeft: 14,
     raised: 190000,
     goal: 300000,
     category: "education",
     sharedCount: 220,
   },
   {
-    image: discover1,
-    tag: "Project Quantip",
-    title: "Eco-Friendly Water Bottles",
-    desc: "Support our mission to reduce plastic waste with our reusable, eco-friendly water bottles.",
-    daysLeft: 10,
-    raised: 35000,
-    goal: 50000,
-    category: "eco-friendly",
-    sharedCount: 120,
-  },
-  {
-    image: discover2,
-    tag: "Project Sanifood",
-    title: "Affordable Laptops for Students",
-    desc: "Help bridge the digital divide by contributing to our initiative for providing laptops to underprivileged students.",
-    daysLeft: 15,
-    raised: 50000,
-    goal: 100000,
-    category: "education",
-    sharedCount: 250,
-  },
-  {
-    image: discover3,
-    tag: "Project CleanCity",
-    title: "Urban Clean-Up Campaign",
-    desc: "Join us in making our cities cleaner and greener through community-led clean-up events.",
-    daysLeft: 5,
-    raised: 20000,
-    goal: 75000,
-    category: "social-causes",
-    sharedCount: 80,
-  },
-  {
-    image: discover4,
-    tag: "Project Health",
-    title: "Art for All",
-    desc: "Help us bring art education to underprivileged children in rural areas.",
-    daysLeft: 12,
-    raised: 75000,
-    goal: 100000,
-    category: "arts-and-culture",
-    sharedCount: 180,
-  },
-  {
-    image: discover5,
-    tag: "Project Techlin",
-    title: "Tech Startup Accelerator",
-    desc: "Invest in the future of technology with our startup accelerator program.",
-    daysLeft: 2,
-    raised: 150000,
-    goal: 200000,
-    category: "innovative-startups",
-    sharedCount: 300,
-  },
-  {
-    image: discover6,
-    tag: "Project Bright10",
-    title: "Fund Education for 10 Rohingya Children",
-    desc: "Your contribution can help provide books, uniforms, and access to learning for displaced children.",
+    image: idea11,
+    tag: "Project Colors of Hope",
+    title: "Rohingya Kids Art Therapy Program",
+    desc: "Bring trauma healing to refugee children through art therapy and mobile creative centers.",
     daysLeft: 9,
-    raised: 190000,
-    goal: 300000,
+    raised: 42000,
+    goal: 90000,
+    category: "education",
+    sharedCount: 220,
+  },
+  {
+    image: idea12,
+    tag: "Project JuteJoy",
+    title: "Women-Led Eco Bag Startup",
+    desc: "A women-led initiative producing biodegradable bags from jute and banana fiber.",
+    daysLeft: 26,
+    raised: 88000,
+    goal: 160000,
+    category: "education",
+    sharedCount: 220,
+  },
+  {
+    image: idea13,
+    tag: "Project ReliefWings",
+    title: "Disaster Relief Drone Delivery",
+    desc: "Deploy drones to quickly deliver emergency food and medical kits to flood and cyclone-affected regions.",
+    daysLeft: 27,
+    raised: 340000,
+    goal: 600000,
     category: "education",
     sharedCount: 220,
   },
@@ -151,7 +158,7 @@ const campaigns = [
 
 const ITEMS_PER_PAGE = 9;
 
-export default function Page() {
+export default function IdeaCampaignsPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedSortBy, setSelectedSortBy] = useState("recent");
   const [searchTerm, setSearchTerm] = useState("");
@@ -235,12 +242,12 @@ export default function Page() {
         <div className="flex justify-between flex-col md:flex-row items-center gap-10 md:gap-20 wrapper">
           <div>
             <h1 className="heading-lg text-[#101011] mb-4">
-              Discover and Support Impactful Campaigns
+              Discover, Support, and Fuel Big Ideas
             </h1>
             <p className="text-[#434347] lg-text max-w-screen-md mb-6 md:mb-10">
-              Explore verified donation campaigns by individuals, NGOs, and
-              communities. Whether it&apos;s for medical help, education, or
-              emergency relief—your support can create real impact.
+              Explore brilliant ideas from people across Bangladesh — from
+              innovative startups to passion projects. Support what inspires you
+              and help bring bold visions to life.
             </p>
             <Button variant="default">Start a Campaign</Button>
           </div>
@@ -248,7 +255,7 @@ export default function Page() {
             <div className="rounded-lg overflow-hidden">
               <Image
                 src={CampaignHeroImage}
-                alt="Child holding books and smiling"
+                alt="Innovative ideas and projects"
                 width={540}
                 height={580}
                 layout="responsive"
@@ -274,12 +281,9 @@ export default function Page() {
                   value={selectedCategory}
                 >
                   <option value="all">All Categories</option>
-                  <option value="social-causes">Social Causes</option>
-                  <option value="innovative-startups">
-                    Innovative Startups
-                  </option>
-                  <option value="arts-and-culture">Arts and Culture</option>
-                  <option value="eco-friendly">Eco-Friendly Projects</option>
+                  <option value="technology">Technology</option>
+                  <option value="eco-friendly">Eco-Friendly</option>
+                  <option value="health">Health</option>
                   <option value="education">Education</option>
                 </select>
                 <RiArrowDropDownLine
@@ -391,7 +395,7 @@ export default function Page() {
                       </div>
                       <div>
                         <Button variant="default" className="w-full">
-                          Donate
+                          Invest
                         </Button>
                       </div>
                     </div>
