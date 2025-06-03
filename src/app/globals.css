@@ -128,6 +128,9 @@
   .card-title {
     @apply text-lg sm:text-xl md:text-2xl leading-6 lg:leading-[33px] font-semibold;
   }
+  .card-discription {
+    @apply text-base md:text-lg font-medium leading-5 lg:leading-[30px];
+  }
 
   .text-normal-none {
     @apply text-sm md:text-base font-normal;
@@ -140,6 +143,9 @@
   }
   .lg-text-medium {
     @apply text-base md:text-xl font-medium;
+  }
+  .lg-text-semi {
+    @apply text-base md:text-xl font-semibold;
   }
   .lg-text-semibold {
     @apply text-base md:text-xl lg:text-2xl font-semibold;

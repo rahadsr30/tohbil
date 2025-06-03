@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import fundingImage from "../assets/fundingImage.png";
+import fundingImage from "@/assets/fundingImage.png";
 import { Button } from "@/components/ui";
 
 export default function Funding() {
