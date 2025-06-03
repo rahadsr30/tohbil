@@ -113,6 +113,9 @@
   .hero {
     @apply text-4xl sm:text-5xl md:text-6xl lg:text-[80px] leading-10 lg:leading-[92px] font-semibold;
   }
+  .heading-lg {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-12 lg:leading-[80px] font-semibold;
+  }
   .heading {
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-8 lg:leading-[67px] font-semibold;
   }
@@ -137,6 +140,9 @@
   }
   .lg-text-medium {
     @apply text-base md:text-xl font-medium;
+  }
+  .lg-text-semibold {
+    @apply text-base md:text-xl lg:text-2xl font-semibold;
   }
 
   .wrapper {
