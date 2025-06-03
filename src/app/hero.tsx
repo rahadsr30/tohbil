@@ -11,8 +11,8 @@ import { Button } from "@/components/ui";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-white py-8 md:py-section">
-      <div className="wrapper px-4 md:px-6">
+    <section className="w-full bg-white py-section">
+      <div className="wrapper">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
           {/* Left Side */}
           <div className="flex-1 w-full max-w-xl">
