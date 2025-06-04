@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 
 const fontSans = Urbanist({
   subsets: ["latin"],
@@ -21,11 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(fontSans.className, "antialiased")}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body className={cn(fontSans.className, "antialiased")}>{children}</body>
     </html>
   );
 }

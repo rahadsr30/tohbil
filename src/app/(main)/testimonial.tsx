@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import avater4 from "../assets/avater/avater4.png";
-import avater5 from "../assets/avater/avater5.png";
-import avater6 from "../assets/avater/avater6.png";
-import avater7 from "../assets/avater/avater7.png";
+import avater4 from "@/assets/avater/avater4.png";
+import avater5 from "@/assets/avater/avater5.png";
+import avater6 from "@/assets/avater/avater6.png";
+import avater7 from "@/assets/avater/avater7.png";
 
 export default function Testimonial() {
   const testimonials = [

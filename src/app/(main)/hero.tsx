@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import heroImg from "../assets/hero/hero.png";
-import avatar1 from "../assets/hero/avater1.png";
-import avatar2 from "../assets/hero/avater2.png";
-import avatar3 from "../assets/hero/avater3.png";
+import heroImg from "@/assets/hero/hero.png";
+import avatar1 from "@/assets/hero/avater1.png";
+import avatar2 from "@/assets/hero/avater2.png";
+import avatar3 from "@/assets/hero/avater3.png";
 import logo1 from "@/assets/hero/waves.png";
 import logo2 from "@/assets/hero/Rotashow.png";
 import logo3 from "@/assets/hero/Travelers logo.png";
