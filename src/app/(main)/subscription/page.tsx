@@ -8,7 +8,7 @@ import creator from "@/assets/subscription/Creator.png";
 import subscriber1 from "@/assets/subscription/Subscriber1.png";
 import Platform from "@/assets/subscription/Platform.png";
 import CTA from "../cta";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 const steps = [
   {
