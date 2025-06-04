@@ -8,7 +8,6 @@ import tutorial2Image from "@/assets/academy/tutorial2.png";
 import tutorial3Image from "@/assets/academy/tutorial3.png";
 import supportImage from "@/assets/academy/support.png";
 import { FaCheckCircle } from "react-icons/fa";
-import CTA from "../cta";
 
 const tutorials = [
   {
@@ -316,7 +315,25 @@ export default function page() {
         </div>
       </section>
 
-      <CTA />
+      <section className="py-section  relative">
+        <div className="wrapper">
+          <div className="flex flex-col items-center text-center rounded-xl z-10 relative overflow-hidden bg-[url('/ctaa.png')] bg-cover bg-center h-full text-white px-10 lg:px-0 py-16">
+            <h2 className="text-[#101011] heading mb-3">
+              Need More Help? Let&apos;s Make Your{" "}
+              <br className="hidden md:block" /> Campaign a Success.
+            </h2>
+            <p className=" text-[#434347] lg-text-medium max-w-screen-sm mb-10">
+              Watch our step-by-step tutorials to confidently launch, manage,
+              and grow your campaign on Tohbil.
+            </p>
+            <div className="flex space-x-4">
+              <Button variant="default">Create a Campaign</Button>
+              <Button variant="outline">Watch Tutorials</Button>
+            </div>
+          </div>
+        </div>
+        {/* Decorative elements are part of the background image */}
+      </section>
     </>
   );
 }
