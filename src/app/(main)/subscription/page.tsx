@@ -8,6 +8,7 @@ import creator from "@/assets/subscription/Creator.png";
 import subscriber1 from "@/assets/subscription/Subscriber1.png";
 import Platform from "@/assets/subscription/Platform.png";
 import CTA from "../cta";
+import { Link } from "lucide-react";
 
 const steps = [
   {
@@ -240,8 +241,12 @@ export default function page() {
               creators—one subscription at a time.
             </p>
             <div className="flex gap-4">
-              <Button variant="default">Explore Creators</Button>
-              <Button variant="outline">Be a Creator</Button>
+              <Button variant="default" asChild>
+                <Link href="/dashboard/subscription">Explore Creators</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/dashboard/subscription">Be a Creator</Link>
+              </Button>
             </div>
           </div>
           <div>

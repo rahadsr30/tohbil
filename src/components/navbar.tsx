@@ -84,7 +84,9 @@ export default function Navbar() {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="ghost">Login</Button>
+            <Button variant="ghost" asChild>
+              <Link href="/dashboard/campaign">Login</Link>
+            </Button>
             <Button variant="default">Sign In</Button>
           </div>
         </div>
@@ -124,8 +126,8 @@ export default function Navbar() {
               </div>
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t border-neutral-200">
-              <Button variant="ghost" className="w-full">
-                Login
+              <Button variant="ghost" asChild className="w-full">
+                <Link href="/dashboard/campaign">Login</Link>
               </Button>
               <Button variant="default" className="w-full">
                 Sign In
