@@ -125,6 +125,9 @@
   .lg-card-2 {
     @apply text-xl sm:text-2xl md:text-3xl lg:text-[30px] leading-5 md:leading-8 lg:leading-[41px] font-semibold;
   }
+  .lg-card-title {
+    @apply text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-9 lg:leading-[52px] font-semibold;
+  }
   .card-title {
     @apply text-lg sm:text-xl md:text-2xl leading-6 lg:leading-[33px] font-semibold;
   }
@@ -149,6 +152,9 @@
   }
   .lg-text-semibold {
     @apply text-base md:text-xl lg:text-2xl font-semibold;
+  }
+  .lg-text-semibold-sm {
+    @apply text-base md:text-xl lg:text-[22px] font-semibold;
   }
 
   .wrapper {
